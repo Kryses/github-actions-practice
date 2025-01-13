@@ -1,0 +1,11 @@
+name: "Lint, Test & Deploy on push"
+on: 
+  issues:
+    types: [opened, closed]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Report Issue"
+        run: echo "${{ toJSON(github.event) }}"
+
