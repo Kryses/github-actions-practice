@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Get Code"
-        uses: actions/checkout
+        uses: actions/checkout@v3
       - name: "Install Requirements"
         run: npm ci
       - name: "Run Lint"
@@ -15,7 +15,7 @@ jobs:
     needs: lint
     steps:
       - name: "Get Code"
-        uses: actions/checkout
+        uses: actions/checkout@v3
       - name: "Install Requirements"
         run: npm ci
       - name: "Run Test"
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Get Code"
-        uses: actions/checkout
+        uses: actions/checkout@v3
       - name: "Install Requirements"
         run: npm ci
       - name: "Run Build"
